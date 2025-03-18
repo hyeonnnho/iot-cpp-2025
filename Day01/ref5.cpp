@@ -1,5 +1,5 @@
 ﻿///*
-//	
+//		출력인 경우: 일반 변수
 //*/
 //#include <iostream>
 //using namespace std;
