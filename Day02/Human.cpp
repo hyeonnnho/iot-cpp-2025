@@ -14,10 +14,10 @@ private:
     char* ptel;
 public:
     Human(const char* name, int n, const char* tel){
-        pname = (char*)new char[sizeof(name)];
+        pname = (char*)new char[strlen(name) + 1];
         strcpy(pname, name);
         age = n;
-        ptel = (char*)new char[sizeof(tel)];
+        ptel = (char*)new char[strlen(tel) + 1];
         strcpy(ptel, tel);
     }
     ~Human(){
