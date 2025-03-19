@@ -1,10 +1,10 @@
-///*
-//	»ý¼ºÀÚ constructor
-//	»ý¼ºÀÚ È£Ãâ·Î °´Ã¼°¡ ¸¸µé¾îÁø´Ù.
-//	°´Ã¼ »ý¼º½Ã ±¸Á¶¿¡ ¸Â´Â »ý¼ºÀÚ°¡ ¾øÀ¸¸é °´Ã¼´Â »ý¼ºµÇÁö ¾Ê´Â´Ù.
-//	»ý¼ºÀÚ´Â ÃÊ±âÈ­ ±â´É¿¡ »ç¿ëÇÑ´Ù.
-//	»ý¼ºÀÚ´Â ¿À¹ö·ÎµùÀÌ °¡´ÉÇÏ´Ù.
-//	ÇÁ·Î±×·¡¸Ó°¡ »ý¼ºÀÚ¸¦ ÀÛ¼ºÇÏ¸é ´õÀÌ»ó µðÆúÆ® »ý¼ºÀÚ´Â Á¦°øµÇÁö ¾Ê´Â´Ù.
+ï»¿///*
+//	ìƒì„±ìž constructor
+//	ìƒì„±ìž í˜¸ì¶œë¡œ ê°ì²´ê°€ ë§Œë“¤ì–´ì§„ë‹¤.
+//	ê°ì²´ ìƒì„±ì‹œ êµ¬ì¡°ì— ë§žëŠ” ìƒì„±ìžê°€ ì—†ìœ¼ë©´ ê°ì²´ëŠ” ìƒì„±ë˜ì§€ ì•ŠëŠ”ë‹¤.
+//	ìƒì„±ìžëŠ” ì´ˆê¸°í™” ê¸°ëŠ¥ì— ì‚¬ìš©í•œë‹¤.
+//	ìƒì„±ìžëŠ” ì˜¤ë²„ë¡œë”©ì´ ê°€ëŠ¥í•˜ë‹¤.
+//	í”„ë¡œê·¸ëž˜ë¨¸ê°€ ìƒì„±ìžë¥¼ ìž‘ì„±í•˜ë©´ ë”ì´ìƒ ë””í´íŠ¸ ìƒì„±ìžëŠ” ì œê³µë˜ì§€ ì•ŠëŠ”ë‹¤.
 //*/
 //#include <iostream>
 //using namespace std;
@@ -14,14 +14,14 @@
 //	int m_num1;
 //	int m_num2;
 //public:
-//	MyClass() {}		// ±âº» »ý¼ºÀÚ
-//	MyClass(int n1, int n2) {		// »ý¼ºÀÚ(ÀÔ·ÂÀ» µÎ°³ ¹Þ´Â)
+//	MyClass() {}		// ê¸°ë³¸ ìƒì„±ìž
+//	MyClass(int n1, int n2) {		// ìƒì„±ìž(ìž…ë ¥ì„ ë‘ê°œ ë°›ëŠ”)
 //		m_num1 = n1;
 //		m_num2 = n2;
 //	}
-//	~MyClass() {}		// ¼Ò¸êÀÚ
+//	~MyClass() {}		// ì†Œë©¸ìž
 //	void printData() {
-//		cout << "³ª´Â MyClassÀÇ ÀÎ½ºÅÏ½º ÀÔ´Ï´Ù." << endl;
+//		cout << "ë‚˜ëŠ” MyClassì˜ ì¸ìŠ¤í„´ìŠ¤ ìž…ë‹ˆë‹¤." << endl;
 //		cout << "m_num1: " << m_num1 << endl;
 //		cout << "m_num2: " << m_num2 << endl;
 //	}

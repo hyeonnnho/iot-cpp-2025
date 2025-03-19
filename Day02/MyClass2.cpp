@@ -1,6 +1,6 @@
+ï»¿//#define _CRT_SECURE_NO_WARNINGS  // MSVC í™˜ê²½ì—ì„œ strcpy ê²½ê³  ë°©ì§€
 //#include <iostream>
-//#include <cstring>  // strcpy, strncpy Æ÷ÇÔ
-//#define _CRT_SECURE_NO_WARNINGS  // MSVC È¯°æ¿¡¼­ strcpy °æ°í ¹æÁö
+//#include <cstring>  // strcpy, strncpy í¬í•¨
 //using namespace std;
 //
 //class MyClass {
@@ -9,18 +9,18 @@
 //    char name[20];
 //    int age;
 //public:
-//    // ±âº» »ı¼ºÀÚ Ãß°¡ (¸â¹ö º¯¼ö ÃÊ±âÈ­)
+//    // ê¸°ë³¸ ìƒì„±ì ì¶”ê°€ (ë©¤ë²„ ë³€ìˆ˜ ì´ˆê¸°í™”)
 //    MyClass() {    }
 //
 //    void setData() {
-//        printf("id, ÀÌ¸§, ³ªÀÌ °ªÀ» ÀÔ·ÂÇÏ¼¼¿ä. ");
+//        printf("id, ì´ë¦„, ë‚˜ì´ ê°’ì„ ì…ë ¥í•˜ì„¸ìš”. ");
 //        cin >> id >> name >> age;
 //    }
 //
 //    void getData() {
 //        cout << "id: " << id << endl;
-//        cout << "ÀÌ¸§: " << name << endl;
-//        cout << "³ªÀÌ: " << age << endl;
+//        cout << "ì´ë¦„: " << name << endl;
+//        cout << "ë‚˜ì´: " << age << endl;
 //    }
 //};
 //

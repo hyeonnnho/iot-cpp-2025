@@ -1,6 +1,6 @@
+ï»¿//#define _CRT_SECURE_NO_WARNINGS  // MSVC í™˜ê²½ì—ì„œ strcpy ê²½ê³  ë°©ì§€
 //#include <iostream>
-//#include <cstring>  // strcpy, strncpy Æ÷ÇÔ
-//#define _CRT_SECURE_NO_WARNINGS  // MSVC È¯°æ¿¡¼­ strcpy °æ°í ¹æÁö
+//#include <cstring>  // strcpy, strncpy í¬í•¨
 //using namespace std;
 //
 //class MyClass {
@@ -9,27 +9,25 @@
 //    char name[20];
 //    int age;
 //public:
-//    // ±âº» »ı¼ºÀÚ Ãß°¡ (¸â¹ö º¯¼ö ÃÊ±âÈ­)
-//    MyClass() : id(0), age(0) { name[0] = '\0'; }
+//    MyClass()  {}
 //
 //    void setData(int _id, const char* _name, int _age) {
 //        id = _id;
-//        strncpy(name, _name, sizeof(name) - 1);
-//        name[sizeof(name) - 1] = '\0';
+//        strncpy_s(name, _name, sizeof(name) - 1);		// ë¬¸ìì—´ì€ ëŒ€ì…ì—°ì‚°ì ë¶ˆê°€ëŠ¥ >> ë¬¸ìì—´ ë³µì‚¬ ë°©ì‹
 //        age = _age;
 //    }
 //
 //    void getData() {
 //        cout << "id: " << id << endl;
-//        cout << "ÀÌ¸§: " << name << endl;
-//        cout << "³ªÀÌ: " << age << endl;
+//        cout << "ì´ë¦„: " << name << endl;
+//        cout << "ë‚˜ì´: " << age << endl;
 //    }
 //};
 //
 //int main()
 //{
 //    MyClass obj;
-//    obj.setData(1, "±èÃ¶¼ö", 20);
+//    obj.setData(1, "ê¹€ì² ìˆ˜", 20);
 //    obj.getData();
 //
 //    return 0;
