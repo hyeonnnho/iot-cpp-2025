@@ -1,30 +1,30 @@
-/*
-    ¹®ÀÚ¿­ Ã³¸®ÇÏ±â
-*/
-#define _CRT_SECURE_NO_WARNINGS
-#include <iostream>
-
-using namespace std;
-
-int main()
-{
-    char str[20] = "È«±æµ¿";
-    char str2[20];
-    //str2 = "±èÀ¯½Å";         // ¹è¿­(ÁÖ¼Ò)Àº l-value°¡ ¾Æ´Ô
-    strcpy(str2, "±èÀ¯½Å");
-
-    cout << str << endl;
-    cout << str2 << endl;
-    
-    //char* str3 = nullptr;         // NULLÆ÷ÀÎÅÍ´Â ¾Æ¹« ÁÖ¼Òµµ °¡¸®Å°Áö ¾ÊÀ½
-    char str3[100];                 // ¹Ì¸® ¸Ş¸ğ¸®¸¦ ÇÒ´ç ¹ŞÀ½
-    cout << "ÀÌ¸§ ÀÔ·Â >>";
-    cin >> str3;                    // Å°º¸µå·Î ÀÔ·Â¹ŞÀº ¹®ÀÚ¿­À» º¯¼ö str3°¡ °¡¸®Å°´Â ¸Ş¸ğ¸® °ø°£¿¡ ÀúÀåÇÏ´Â °úÁ¤
-    cout << str3 << endl;
-
-    const char* name;
-    name = "±èÃ¶¼ö";               // ¹®ÀÚ¿­ ¸®ÅÍ·²Àº ÀĞ±â Àü¿ë ¸Ş¸ğ¸®(µ¥ÀÌÅÍ ¿µ¿ª)¿¡ ÀÚµ¿À¸·Î ÀúÀå
-    cout << name << endl;
-
-    return 0;
-}
+ï»¿///*
+//    ë¬¸ìì—´ ì²˜ë¦¬í•˜ê¸°
+//*/
+//#define _CRT_SECURE_NO_WARNINGS
+//#include <iostream>
+//
+//using namespace std;
+//
+//int main()
+//{
+//    char str[20] = "í™ê¸¸ë™";
+//    char str2[20];
+//    //str2 = "ê¹€ìœ ì‹ ";         // ë°°ì—´(ì£¼ì†Œ)ì€ l-valueê°€ ì•„ë‹˜
+//    strcpy(str2, "ê¹€ìœ ì‹ ");
+//
+//    cout << str << endl;
+//    cout << str2 << endl;
+//    
+//    //char* str3 = nullptr;         // NULLí¬ì¸í„°ëŠ” ì•„ë¬´ ì£¼ì†Œë„ ê°€ë¦¬í‚¤ì§€ ì•ŠìŒ
+//    char str3[100];                 // ë¯¸ë¦¬ ë©”ëª¨ë¦¬ë¥¼ í• ë‹¹ ë°›ìŒ
+//    cout << "ì´ë¦„ ì…ë ¥ >>";
+//    cin >> str3;                    // í‚¤ë³´ë“œë¡œ ì…ë ¥ë°›ì€ ë¬¸ìì—´ì„ ë³€ìˆ˜ str3ê°€ ê°€ë¦¬í‚¤ëŠ” ë©”ëª¨ë¦¬ ê³µê°„ì— ì €ì¥í•˜ëŠ” ê³¼ì •
+//    cout << str3 << endl;
+//
+//    const char* name;
+//    name = "ê¹€ì² ìˆ˜";               // ë¬¸ìì—´ ë¦¬í„°ëŸ´ì€ ì½ê¸° ì „ìš© ë©”ëª¨ë¦¬(ë°ì´í„° ì˜ì—­)ì— ìë™ìœ¼ë¡œ ì €ì¥
+//    cout << name << endl;
+//
+//    return 0;
+//}

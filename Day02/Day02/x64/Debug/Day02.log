@@ -1,5 +1,2 @@
-﻿  문자열처리하기.cpp
-C:\Work\C++\iot-cpp-2025\Day02\문자열처리하기.cpp(26,12): error C2440: '=': 'const char [7]'에서 'char *'(으)로 변환할 수 없습니다.
-      C:\Work\C++\iot-cpp-2025\Day02\문자열처리하기.cpp(26,12):
-      문자열 리터럴로부터의 변환은 const 한정자가 손실됩니다(/Zc:strictStrings 참조).
-  
+﻿  Human.cpp
+  Day02.vcxproj -> C:\Work\C++\iot-cpp-2025\Day02\x64\Debug\Day02.exe
