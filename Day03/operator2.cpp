@@ -14,7 +14,7 @@ public:
 		this->y = other.y;
 	}
 	const Point& add(const Point& other) {
-		return Point(x + other.x, y + other.y);
+		return Point(x + other.x, y + other.y);			// 货肺款 烙矫按眉 积己
 	}
 	void showPoint() {
 		printf("x: %d, y: %d\n", x, y);
