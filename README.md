@@ -89,8 +89,8 @@
 
 - class 구성요소 : [C](./Day02/class2.cpp)
     - 접근제어 지시자(private, public, protected)
-    - 멤버 변수 : 속성(private 영역)
-    - 멤버 함수(메서드) : 기능(public 영역)
+    - 멤버 변수 : 속성(private 영역)    - 각 객체마다 소유함
+    - 멤버 함수(메서드) : 기능(public 영역)     - 코드 세그먼트에 저장되어 개체들이 공유함
     - 생성자 : [C](./Day02/class3.cpp)
         - 따로 만들지 않아도 디폴트 생성자가 있음
         - 생성자를 통해 객체 생성
@@ -126,3 +126,37 @@
 - 동적할당 실습 : [C++](./Day02/Human.cpp)
     - 문자열 처리
     - 동적 할당
+
+# 3일차
+- 복사생성자 : [C++](./Day03/copyCtor2.cpp)
+    - 객체가 입력으로 올때에는 상수 참조로 받아야함
+    - deep copy : [C++](./Day03/copyCtor3.cpp)
+        - 동적 할당 받은 경우
+	- 디폴트로 자동으로 제공바는 생성자: 디폴트 생성자, 복사 생성자, 소멸자 ...
+
+- 변환 생성자 : [C++](./Day03/변환생성자.cpp)
+    - explicit : [C++](./Day03/변환생성자3.cpp)
+- 이동 생성자 : [C++](./Day03/moveCtor2.cpp)
+    - noexcept : 함수가 예외를 던지지 않음을 보장
+    - 임시객체를 초기화해서 이후 사용을 방지
+
+- BankingSystem : [C++](./BankingSystem/BankingSystemVer01.cpp)
+    - 클래스 정의
+    - 동적 메모리 할당
+    - 포인터 배열
+    - 반복문
+    - 문자열 처리
+
+- static 변수 : [C++](./Day03/static.cpp)
+    - 클래스 멤버
+    - 객체들이 공유
+    - 초기화가 클래스 외부에서 이루어져야함
+- static 함수 : [C++](./Day03/static2.cpp)
+    - 일반 멤버 변수의 접근 허용x
+    - static 멤버의 사용만 가능
+
+- static 실습 : [C++](./Day03/static3.cpp)
+    - 자동으로 회원번호 증가
+
+- 연산자 오버로딩 : [C++](./Day03/operator.cpp)
+    - 
