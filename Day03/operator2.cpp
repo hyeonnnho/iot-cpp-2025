@@ -1,4 +1,4 @@
-/*
+ï»¿/*
 */
 #include <iostream>
 class Point {
@@ -14,7 +14,7 @@ public:
 		this->y = other.y;
 	}
 	const Point& add(const Point& other) {
-		return Point(x + other.x, y + other.y);			// »õ·Î¿î ÀÓ½Ã°´Ã¼ »ı¼º
+		return Point(x + other.x, y + other.y);			// ìƒˆë¡œìš´ ì„ì‹œê°ì²´ ìƒì„±
 	}
 	void showPoint() {
 		printf("x: %d, y: %d\n", x, y);
