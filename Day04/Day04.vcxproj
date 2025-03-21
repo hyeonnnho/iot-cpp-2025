@@ -143,6 +143,8 @@
     <ClCompile Include="template2.cpp" />
     <ClCompile Include="template3.cpp" />
     <ClCompile Include="template4.cpp" />
+    <ClCompile Include="template5.cpp" />
+    <ClCompile Include="template6.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

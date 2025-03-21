@@ -189,3 +189,4 @@
     - typename 여러개인 경우 : [C++](./Day04/template3.cpp)
     - class 템플릿 : [C++](./Day04/template5.cpp)
         - 클래스 템플릿은 인스턴스 생성 시 반드시 typename을 지정
+        - 템플릿 매개변수 : [C++](./Day04/template6.cpp)

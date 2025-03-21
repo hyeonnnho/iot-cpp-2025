@@ -1,25 +1,31 @@
-/*
-
-*/
-#include <iostream>
-
-template <typename T>
-class CTest {
-private:
-	T num;
-public:
-	//CTest(T n) : num(n) {}
-	CTest(T);
-	T getData() {
-		return num;
-	}
-};
-template <typename T> 
-CTest<T>::CTest(T n) {
-	num = n;
-}
-int main()
-{
-	CTest<int> obj(10);				// Å¬·¡½º ÅÛÇÃ¸´Àº ÀÎ½ºÅÏ½º »ı¼º ½Ã ¹İµå½Ã typenameÀ» ÁöÁ¤
-	return 0;
-}
+ï»¿///*
+//
+//*/
+//#include <iostream>
+//
+//template <typename T>				// í´ë˜ìŠ¤ í…œí”Œë¦¿ì˜ ì¼ë°˜í™”
+//class CTest {
+//private:
+//	T num;
+//public:
+//	CTest(T n) : num(n) {}
+//	T getData() { return num; }
+//};
+//template<>							// í´ë˜ìŠ¤ í…œí”Œë¦¿ì˜ íŠ¹ìˆ˜í™”
+//class CTest<char> {
+//private:
+//	char data;
+//public:
+//	CTest(char d): data(d){}
+//	char getData() { return data; }
+//};
+//int main()
+//{
+//	CTest<int> obj(10);				// í´ë˜ìŠ¤ í…œí”Œë¦¿ì€ ì¸ìŠ¤í„´ìŠ¤ ìƒì„± ì‹œ ë°˜ë“œì‹œ typenameì„ ì§€ì •
+//	std::cout << obj.getData() << std::endl;
+//
+//	CTest<char> obj2('a');
+//	std::cout << obj2.getData() << std::endl;
+//
+//	return 0;
+//}
