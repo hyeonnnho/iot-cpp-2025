@@ -161,3 +161,31 @@
 - 연산자 오버로딩 : [C++](./Day03/operator.cpp)
     - 매개변수로 클래스를 받아서 클래스로 반환
     - 매개변수(const 클래스& 변수) 사용
+
+# 4일차
+- 연산자 오버로딩 : [C++](./Day04/operator3.cpp)
+    - 오버로딩 할 수 없는 연산자 : `::, ., *, sizeof ...`
+    - 객체 + 객체
+    - 객체 + 정수
+    - operator+(객체 or 정수)
+ 
+- 전역함수 오버로딩 : [C++](./Day04/operator5.cpp)
+    - 정수 + 객체
+    - operator+(정수, 객체)
+    - private : [C++](./Day04/operator6.cpp)
+        - friend 선언
+        - cout 객체를 통한 객체 출력
+
+- #define : [C++](./Day04/inline.cpp)
+    - #이 붙으면 컴파일러 말고 전처리기가 작동.
+- inline : : [C++](./Day04/inline2.cpp)
+    - 함수를 호출하는 대신 해당 함수의 코드가 호출된 위치에 직접 삽입
+    - 컴파일러가 항상 inline을 적용하는 것은 아니며, 최적화를 고려해서 판단
+
+- 템플릿 : [C++](./Day04/template.cpp)
+    - 여러 자료형을 템플릿 인자로 받아 함수 내부에서 활용
+    - 다형성과 재활용
+    - 템플릿 일반화&특수화 : [C++](./Day04/template2.cpp)
+    - typename 여러개인 경우 : [C++](./Day04/template3.cpp)
+    - class 템플릿 : [C++](./Day04/template5.cpp)
+        - 클래스 템플릿은 인스턴스 생성 시 반드시 typename을 지정
