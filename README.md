@@ -273,9 +273,11 @@
 - vector
     - vector.size() : 원소 크기(갯수)를 반환
     - vector.begin() : 첫번째 주소를 반환
-    - vector.front() :
+    - vector.rbegin() : 마지막 주소를 반환
+    - vector.front() : 첫번째 요소를 반환
     - vector.end() : 마지막의 다음 주소를 반환
-    - vector.back() :
+    - vector.rend() : 처음 원소의 이전 주소를 반환
+    - vector.back() : 마지막 요소를 반환
     - vector.push_back(10) : 마지막 원소 뒤에 10을 추가
     - vector.pop_back() : 마지막 원소 제거
     - vector.insert(index, value) : index번째 위치에 value를 추가
@@ -285,4 +287,6 @@
 
     - 출력 : [C++](./STL/vector3.cpp)
     - vector<int>::iterator iter은 순방향 반복자 선언
+        - 이를 생략하고 auto 선언해도 무방
+    - vector<int>::reverse_iterator rit은 역방향 반복자 선언
         - 이를 생략하고 auto 선언해도 무방
