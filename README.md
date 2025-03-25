@@ -261,11 +261,28 @@
         - 순환참조를 방지 : [C++](./Day06/weak_ptr2.cpp)
         - 객체의 생명 주기에 영향을 주지 않음
    
-STL(Standard Template Library)
+#### STL(Standard Template Library)
 - container : 객체를 저장하고 관리하는 자료구조
     - 종류
         - 시퀀스 컨테이너 - 선형적으로 데이터 저장(순서)
             - vector, list, queue
         - 연관 컨테이너 - 일정한 규칙으로 저장
             - set, multiset, map, multimap
-        - 컨테이너 어댑터 - 변형
+         - 컨테이너 어댑터 - 변형
+
+- vector
+    - vector.size() : 원소 크기(갯수)를 반환
+    - vector.begin() : 첫번째 주소를 반환
+    - vector.front() :
+    - vector.end() : 마지막의 다음 주소를 반환
+    - vector.back() :
+    - vector.push_back(10) : 마지막 원소 뒤에 10을 추가
+    - vector.pop_back() : 마지막 원소 제거
+    - vector.insert(index, value) : index번째 위치에 value를 추가
+    - vector.capacity() : 벡터에 할당된 메모리 크기를 리턴 - size()
+    - vector.size() : 벡터의 사이즈를 반환
+    - iterator 타입 : iterator, begin(), end()
+
+    - 출력 : [C++](./STL/vector3.cpp)
+    - vector<int>::iterator iter은 순방향 반복자 선언
+        - 이를 생략하고 auto 선언해도 무방
