@@ -234,3 +234,38 @@
 - static_cast : [C++](./Day05/static_cast.cpp)
     - static_cast<type-id>(expression)
     - 기본 자료형의 형변환으로 컴파일 타임에 타입을 변환
+
+# 6일차
+- dynamic_cast : [C++](./Day06/dynamic_cast2.cpp)
+    - 상속관계에서 안전하게 형변환을 지원
+    - 다운캐스팅하는 경우 가상함수가 있어야 함
+- const_cast : [C++](./Day06/const_cast2.cpp)
+    - const 선언을 해체
+- reinterpret_cast : [C++](./Day06/reinterpret.cpp)
+    - 포인터->포인터, 포인터->변수, 변수->포인터
+    - 주로 포인터 관련 연산자
+- 임시 객체 : [C++](./Day06/tempobj.cpp)
+    - 참조를 사용할 수 없음(우측값 참조 &&, 상수참조 const를 이용하면 가능!)
+    - 다음 행으로 넘어가기 전에 소멸
+    - 매개변수로 받을 때, return 할 때 복사생성자로 임시 객체 생성
+- 스마트 포인터
+    - 객체의 생명 주기를 객체에 맡김으로 프로그래머의 메모리 관리 부담을 덜어줌
+    - unique_ptr : [C++](./Day06/unique_ptr.cpp)
+        - 소유권을 독점적으로 관리하는 스마트 포인터(auto_ptr 대체)
+    - shared_ptr : [C++](./Day06/shared_ptr.cpp)
+        - 여러 개의 스마트 포인터가 동일한 객체를 공유
+        - std::make_shared<T>()를 사용하면 객체와 참조 카운트가 하나의 메모리 블록에 할당
+        - 서로 참조 시 메모리 누수 가능성
+    - weak_ptr : [C++](./Day06/weak_ptr.cpp)
+        - 객체를 소유하지 않고 참조만 함
+        - 순환참조를 방지 : [C++](./Day06/weak_ptr2.cpp)
+        - 객체의 생명 주기에 영향을 주지 않음
+   
+STL(Standard Template Library)
+- container : 객체를 저장하고 관리하는 자료구조
+    - 종류
+        - 시퀀스 컨테이너 - 선형적으로 데이터 저장(순서)
+            - vector, list, queue
+        - 연관 컨테이너 - 일정한 규칙으로 저장
+            - set, multiset, map, multimap
+        - 컨테이너 어댑터 - 변형
