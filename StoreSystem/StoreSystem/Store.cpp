@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-// ÏÉÅÌíà ÌÅ¥ÎûòÏä§ (Í∏∞Î≥∏)
+// ªÛ«∞ ≈¨∑°Ω∫ (±‚∫ª)
 class Product {
 protected:
     string id;
@@ -11,23 +11,24 @@ protected:
     string producer;
 public:
     Product(string id, int price, string producer)
-        : id(id), price(price), producer(producer) {}
-
-    virtual void showInfo() const {
-        cout << "[ÏÉÅÌíà ID] " << id << " | [Í∞ÄÍ≤©] " << price << " | [Ï†úÏ°∞ÏÇ¨] " << producer << endl;
+        : id(id), price(price), producer(producer) {
     }
 
-    virtual string getType() const = 0;  // ÏàúÏàò Í∞ÄÏÉÅ Ìï®Ïàò
+    virtual void showInfo() const {
+        cout << "[ªÛ«∞ ID] " << id << " | [∞°∞›] " << price << " | [¡¶¡∂ªÁ] " << producer << endl;
+    }
+
+    virtual string getType() const = 0;  // º¯ºˆ ∞°ªÛ «‘ºˆ
     virtual ~Product() {}
 };
 
-// Ï±Ö ÌÅ¥ÎûòÏä§
+// √• ≈¨∑°Ω∫
 class Book : public Product {
 public:
     Book(string id, int price, string producer) : Product(id, price, producer) {}
 
     void showInfo() const override {
-        cout << "[Ï±Ö] ";
+        cout << "[√•] ";
         Product::showInfo();
     }
 
@@ -36,13 +37,13 @@ public:
     }
 };
 
-// Ìï∏ÎìúÌè∞ ÌÅ¥ÎûòÏä§
+// «⁄µÂ∆˘ ≈¨∑°Ω∫
 class HandPhone : public Product {
 public:
     HandPhone(string id, int price, string producer) : Product(id, price, producer) {}
 
     void showInfo() const override {
-        cout << "[Ìï∏ÎìúÌè∞] ";
+        cout << "[«⁄µÂ∆˘] ";
         Product::showInfo();
     }
 
@@ -51,13 +52,13 @@ public:
     }
 };
 
-// Ïª¥Ìì®ÌÑ∞ ÌÅ¥ÎûòÏä§
+// ƒƒ«ª≈Õ ≈¨∑°Ω∫
 class Computer : public Product {
 public:
     Computer(string id, int price, string producer) : Product(id, price, producer) {}
 
     void showInfo() const override {
-        cout << "[Ïª¥Ìì®ÌÑ∞] ";
+        cout << "[ƒƒ«ª≈Õ] ";
         Product::showInfo();
     }
 
@@ -71,50 +72,56 @@ int main() {
     int choice;
 
     while (true) {
-        cout << "\n===== ÏÉÅÌíà Í¥ÄÎ¶¨ ÏãúÏä§ÌÖú =====\n";
-        cout << "1. ÏÉÅÌíà Îì±Î°ù\n";
-        cout << "2. ÏÉÅÌíà Î™©Î°ù Ï∂úÎ†•\n";
-        cout << "3. Ï¢ÖÎ£å\n";
-        cout << "ÏÑ†ÌÉù: ";
+        cout << "\n===== ªÛ«∞ ∞¸∏Æ Ω√Ω∫≈€ =====\n";
+        cout << "1. ªÛ«∞ µÓ∑œ\n";
+        cout << "2. ªÛ«∞ ∏Ò∑œ √‚∑¬\n";
+        cout << "3. ¡æ∑·\n";
+        cout << "º±≈√: ";
         cin >> choice;
 
         if (choice == 1) {
-            cout << "\n[ÏÉÅÌíà Ï¢ÖÎ•ò ÏÑ†ÌÉù]\n1. Ï±Ö\n2. Ìï∏ÎìúÌè∞\n3. Ïª¥Ìì®ÌÑ∞\nÏÑ†ÌÉù: ";
+            cout << "\n[ªÛ«∞ ¡æ∑˘ º±≈√]\n1. √•\n2. «⁄µÂ∆˘\n3. ƒƒ«ª≈Õ\nº±≈√: ";
             int type;
             cin >> type;
 
             string id, producer;
             int price;
 
-            cout << "ÏÉÅÌíà ID: ";
+            cout << "ªÛ«∞ ID: ";
             cin >> id;
-            cout << "Í∞ÄÍ≤©: ";
+            cout << "∞°∞›: ";
             cin >> price;
-            cout << "Ï†úÏ°∞ÏÇ¨: ";
+            cout << "¡¶¡∂ªÁ: ";
             cin >> producer;
 
             if (type == 1) {
                 productList.push_back(new Book(id, price, producer));
-            } else if (type == 2) {
+            }
+            else if (type == 2) {
                 productList.push_back(new HandPhone(id, price, producer));
-            } else if (type == 3) {
+            }
+            else if (type == 3) {
                 productList.push_back(new Computer(id, price, producer));
-            } else {
-                cout << "ÏûòÎ™ªÎêú ÏÉÅÌíà Ï¢ÖÎ•òÏûÖÎãàÎã§.\n";
+            }
+            else {
+                cout << "¿ﬂ∏¯µ» ªÛ«∞ ¡æ∑˘¿‘¥œ¥Ÿ.\n";
             }
 
-        } else if (choice == 2) {
-            cout << "\n[Îì±Î°ùÎêú ÏÉÅÌíà Î™©Î°ù]\n";
+        }
+        else if (choice == 2) {
+            cout << "\n[µÓ∑œµ» ªÛ«∞ ∏Ò∑œ]\n";
             for (const auto& product : productList) {
                 product->showInfo();
             }
 
-        } else if (choice == 3) {
-            cout << "ÌîÑÎ°úÍ∑∏Îû®ÏùÑ Ï¢ÖÎ£åÌï©ÎãàÎã§.\n";
+        }
+        else if (choice == 3) {
+            cout << "«¡∑Œ±◊∑•¿ª ¡æ∑·«’¥œ¥Ÿ.\n";
             break;
 
-        } else {
-            cout << "ÏûòÎ™ªÎêú ÏÑ†ÌÉùÏûÖÎãàÎã§.\n";
+        }
+        else {
+            cout << "¿ﬂ∏¯µ» º±≈√¿‘¥œ¥Ÿ.\n";
         }
     }
 
